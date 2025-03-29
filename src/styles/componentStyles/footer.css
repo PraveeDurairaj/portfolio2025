@@ -1,0 +1,53 @@
+.footer-bg {
+    background: black;
+    color: white;
+    margin-top: 80px;
+}
+
+.copy-rights-text {
+    color: gray;
+    font-size: 12px;
+}
+
+.footer-line {
+    border-bottom: 0.5px solid gray;
+    margin: 10px;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 50px;
+}
+
+.footer-text-Container {
+    text-align: center;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.icon-container .icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.iconFlex{
+    padding: 8px;
+    background: #221f1f;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+@media screen and (max-width:767px) {
+    .footer-container {
+        padding: 20px;
+    }
+}

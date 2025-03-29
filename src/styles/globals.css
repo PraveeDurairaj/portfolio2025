@@ -1,0 +1,56 @@
+@import './theme.css';
+@import './helper.css';
+@import './componentStyles/header.css';
+@import './componentStyles/banner.css';
+@import './componentStyles/about.css';
+@import './componentStyles/techStack.css';
+@import './componentStyles/whyChoose.css';
+@import './componentStyles/blog.css';
+@import './componentStyles/footer.css';
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", serif;
+}
+
+#About,
+#Blog,
+#Skills,
+#WhyChoose{
+  scroll-margin-top:60px ;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  padding: 10px 16px;
+  color: var(--foreground-primary);
+  background-color: var(--white-primary);
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.bg-gray{
+  background-color: var(--gray-primary);
+  display: flex;
+}
+.devlop-bar{
+  margin: 80px 0;
+}
+
+
