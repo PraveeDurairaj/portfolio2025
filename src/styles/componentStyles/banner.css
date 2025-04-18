@@ -1,0 +1,116 @@
+.banner-container {
+    background: var(--liner-primary);
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-container :where(h1) {
+    padding: 0px 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--foreground-primary);
+}
+.highlight-text {
+    background: var(--highlight-primary);
+    color: transparent;
+    position: relative;
+    z-index: 1;
+    background-clip: text;
+    padding: 0px 5px;
+}
+.highlight-text::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    content: '';
+    inset: 0;
+    z-index: -1;
+    transform: skewX(-10deg);
+}
+.description-text {
+    margin-top: 8px;
+    padding: 0px 15px;
+    color: var(--foreground-primary);
+}
+.key-points-card-container {
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+}
+.key-points-card-container::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    background: transparent;
+    height: 20px;
+    bottom: 0;
+    left: 50%;
+    box-shadow: #1620E4 10px 4px 250px 200px;
+}
+.key-points-card-container :where(div) {
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 10px;
+    max-width: 280px;
+    position: absolute;
+    background-color: var(--white-primary);
+    color: var(--foreground-primary);
+    display: none;
+}
+.key-points-card-container :where(div):nth-child(1) {
+    right: -120px;
+    top: 170px;
+}
+
+.key-points-card-container :where(div):nth-child(2) {
+    right: -170px;
+    bottom: 50px;
+}
+
+.key-points-card-container :where(div):nth-child(3) {
+    left: -210px;
+    top: 170px;
+}
+.key-points-card-container :where(div):nth-child(4) {
+    left: -160px;
+    bottom: 50px;
+}
+.hero-img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (min-width:768px) {
+    .banner-container :where(h1) {
+        font-size: 38px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .banner-container :where(h1) {
+        font-size: 46px;
+    }
+
+    .description-text {
+        display: none;
+    }
+    .key-points-card-container :where(div) {
+        display: block;
+    }
+    .hero-img{
+        bottom: -80px;
+    }
+}

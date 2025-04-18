@@ -1,0 +1,36 @@
+:root{
+  --about-primary:#DED3F6;
+  --header-primary:#0ed02e;
+  --static-white:#ffffff;
+  --static-black:#171717;
+  --about-avatar-1:#d714d8;
+  --about-avatar-2:#008000;
+  --why-choose-primary:linear-gradient(to right, #e8d15b, #f3f4f7);
+  --cta-linear: linear-gradient(to bottom, #182bd4, #030303);
+  --cta-primary:#0a0ad2;
+  --error-foreground:#ff0000;
+}
+.light {
+    --background: #ffffff;
+    --black-primary: #171717;
+    --white-primary: #ffffff;
+    --gray-primary:#f8f8f8;
+    --foreground-primary: var(--black-primary);
+    --foreground-secondary: var(--white-primary);
+    --liner-primary: linear-gradient(to bottom, #ffffff, #D4D5EB, #928AB7);
+    --highlight-primary: var(--liner-primary);
+    --iconFilter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(7447%) hue-rotate(212deg) brightness(116%) contrast(100%);
+  }
+  
+  .dark {
+    --background: #171717;
+    --black-primary: #ffffff;
+    --white-primary: #171717;
+    --foreground-primary: var(--black-primary);
+    --foreground-secondary: var(--white-primary);
+    --liner-primary: #171717;
+    --highlight-primary: white;
+    --iconFilter: none;
+    --gray-primary:#171717;
+  }
+  

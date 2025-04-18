@@ -1,0 +1,154 @@
+.container {
+  margin: auto;
+  max-width: 1280px;
+  padding: 60px 15px 0px;
+}
+
+/* space top */
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-18 {
+  margin-top: 18px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+
+/* space bottom */
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* font-weight start */
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+/* font-weight end */
+
+/* font varient start */
+.common_h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 46px;
+  color: var(--foreground-primary);
+}
+
+.common-sub-heading-varient-1 {
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--foreground-primary);
+}
+
+.common-para-varient-1 {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--foreground-primary);
+}
+
+.common-para-varient-2 {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--foreground-primary);
+}
+
+.common-para-varient-3 {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--foreground-primary);
+}
+.theme-text-black{
+  color: var(--foreground-primary);
+}
+.btn-primary {
+  padding: 10px 16px;
+  color: var(--foreground-primary);
+  background-color: var(--white-primary);
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 0;
+}
+
+
+/* font varient end */
+
+@media screen and (max-width:767px) {
+  .container {
+    padding: 40px 15px 0px;
+  }
+
+  .common_h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  .common-para-varient-1 {
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--foreground-primary);
+  }
+
+  .common-para-varient-2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
