@@ -1,5 +1,4 @@
 .banner-container {
-    background: var(--banner-linear-primary);
     min-height: 550px;
     overflow: hidden;
     position: relative;
