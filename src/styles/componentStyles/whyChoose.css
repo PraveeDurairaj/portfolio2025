@@ -1,7 +1,7 @@
 .why-choose-container {
     padding: 50px;
     border-radius: 10px;
-    background: var(--why-choose-primary);
+    background: var(--liner-primary);
 }
 
 .why-choose-header {

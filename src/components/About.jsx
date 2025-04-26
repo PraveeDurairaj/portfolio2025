@@ -30,7 +30,7 @@ const About = () => {
     return (
         <div className='bg-gray' id='About'>
             <div className='container'>
-                <h2 className='common_h2 mb-12 text-center' data-aos='fade-up' >{aboutData?.title}</h2>
+                <h2 className='common_h2 mb-12 text-center ' data-aos='fade-up' >{aboutData?.title}</h2>
                 <p className='common-para-varient-1 about-description text-center' data-aos='fade-up' >{aboutData?.description}</p>
                 <div className='about-grid'>
                     {aboutData?.cardData?.map((data,index)=>{

@@ -17,24 +17,29 @@ const Header = () => {
     const menuList = [
         {
             text:'Home',
-            id:'#Home'
+            id:'/'
         },
         {
             text:'About',
-            id:'#About'
+            id:'/#About'
         },
         {
             text:'Skills',
-            id:'#Skills'
+            id:'/#Skills'
         },
         {
             text:'Why choose',
-            id:'#WhyChoose'
+            id:'/#WhyChoose'
         },
         {
             text:'Blog',
-            id:'#Blog'
-        }
+            id:'/#Blog'
+        },
+        {
+            text:'Contact',
+            id:'/contact'
+        },
+
     ]
     const [isDarkMode] = useDarkMode();
     return (

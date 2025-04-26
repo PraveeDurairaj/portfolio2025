@@ -3,12 +3,16 @@
     height: 50px;
     padding: 10px;
     border-radius: 10px;
-    background-color: var(--about-primary);
+    background-color: var(--static-black);
+}
+#About .about-description{
+    color: var(--foreground-primary);
 }
 
 .about-card :where(span)>img {
     width: 30px;
     height: 30px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(73%) saturate(0%) hue-rotate(220deg) brightness(106%) contrast(101%);
 }
 
 .about-description {
@@ -28,8 +32,8 @@
     display: flex;
     flex-direction: column;
     padding: 25px 20px;
-    background: var(--white-primary);
-    color: var(--black-primary);
+    background: var(--liner-primary);
+    color: var(--static-black);
     border-radius: 10px;
     gap: 12px;
     transition: 0.3s all ease-in;
@@ -38,7 +42,7 @@
 @media screen and (min-width:1200px) {
   
     .about-grid:has(.about-card:hover) .about-card:hover{
-        box-shadow: 0 5px 19px 7px #c5c5dd;
+        box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
     }
     .about-grid:has(.about-card:hover) .about-card:not(:hover){
         filter: blur(2px);
