@@ -2,6 +2,7 @@
     padding: 50px;
     border-radius: 10px;
     background: var(--liner-primary);
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
 }
 
 .why-choose-header {
@@ -18,6 +19,7 @@
     gap: 10px;
 }
 
+
 .why-chosse-card {
     background: var(--static-white);
     display: inline-flex;
@@ -32,15 +34,19 @@
     width: 20px;
     height: 20px;
     object-fit: contain;
-  }
-  .why-choose-btn{
-    margin: 20px auto 0px;
-  }
+}
+
+.why-choose-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
 @media screen and (max-width:767px) {
     .why-choose-container {
         padding: 20px;
     }
+
     .why-choose-header {
         font-size: 24px;
     }

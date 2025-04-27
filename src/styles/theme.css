@@ -18,7 +18,6 @@
     --foreground-primary: var(--black-primary);
     --foreground-secondary: var(--white-primary);
     --banner-linear-primary: var(--liner-primary);
-    --highlight-primary: var(--liner-primary);
     --iconFilter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(7447%) hue-rotate(212deg) brightness(116%) contrast(100%);
   }
   
@@ -29,7 +28,6 @@
     --foreground-primary: var(--black-primary);
     --foreground-secondary: var(--white-primary);
     --banner-linear-primary: #171717;
-    --highlight-primary: white;
     --iconFilter: none;
     --gray-primary:#171717;
   }

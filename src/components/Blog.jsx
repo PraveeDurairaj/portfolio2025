@@ -33,8 +33,8 @@ const Blog = () => {
         <div className='blog-img-container'>
           <Image src={img} alt={title} className='blog-img'></Image>
         </div>
-        <p className="theme-text-black font-weight-500 mb-8">{title}</p>
-        <p className="blog-description">{description}</p>
+        <p className="theme-text-black font-weight-500 mb-8 common-sub-heading-varient-1">{title}</p>
+        <p className="blog-description common-para-varient-2">{description}</p>
       </Link>
     )
   }
@@ -42,7 +42,7 @@ const Blog = () => {
   return (
     <div className='container' id='Blog'>
       <h2 className='common_h2 mb-12 text-center' data-aos='zoom-in'>Code & Craft</h2>
-      <p className='common-para-varient-1 text-center'>A collection of my experiences and lessons learned in frontend development</p>
+      <p className='common-para-varient-1 text-center theme-text-black'>A collection of my experiences and lessons learned in frontend development</p>
       <div className='blog-card-container'>
         {
           blogData?.map((data)=>{

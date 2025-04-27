@@ -10,7 +10,7 @@ const WhyChoose = () => {
             <div className="why-choose-container">
                 <div className='text-center mb-20'>
                     <h2 className='why-choose-header'>Let's Create Something</h2>
-                    <p>Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+                    <p className='common-para-varient-1'>Have a project in mind or want to collaborate? I'd love to hear from you!</p>
                 </div>
                 <div className='why-choose-card-container'>
                     {
@@ -24,7 +24,9 @@ const WhyChoose = () => {
                         })
                     }
                 </div>
-                    <PrimaryButton text={'Get in Touch'} className={'why-choose-btn'}  />
+                <div className={'why-choose-btn'} >
+                    <PrimaryButton type={'link'} link={'/contact'} text={'Get in Touch'} />
+                </div >
             </div>
         </div>
     )

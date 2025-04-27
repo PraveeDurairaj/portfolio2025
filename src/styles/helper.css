@@ -79,27 +79,31 @@
 /* font-weight end */
 
 /* font varient start */
+.common_h1 {
+  font-size: 42px;
+  font-weight: 500;
+}
 .common_h2 {
   font-size: 38px;
   font-weight: 500;
-  line-height: 46px;
+  line-height: 56px;
   color: var(--foreground-primary);
 }
 
 .common-sub-heading-varient-1 {
   font-size: 20px;
-  line-height: 28px;
+  line-height: 30px;
   color: var(--foreground-primary);
 }
 
 .common-para-varient-1 {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 28px;
 }
 
 .common-para-varient-2 {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .common-para-varient-3 {
@@ -123,36 +127,51 @@
   gap: 10px;
   cursor: pointer;
   border: 0;
+  text-decoration: none;
+  transition: all 0.4s linear;
 }
-
+.btn-primary:hover{
+  box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+  
+}
 
 /* font varient end */
 
-@media screen and (max-width:991px) {
-  .common-para-varient-1 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:991px) {
+  .btn-primary {
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+  }
   .container {
     padding: 40px 15px;
   }
-
-  .common_h2 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
+  .common_h1 {
+    font-size: 32px;
+    font-weight: 600;
   }
 
-  .common-para-varient-1 {
-    font-size: 15px;
-    line-height: 22px;
-  }
+.common_h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
 
-  .common-para-varient-2 {
-    font-size: 14px;
-    line-height: 20px;
-  }
+.common-sub-heading-varient-1 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.common-para-varient-1 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.common-para-varient-2 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.common-para-varient-3 {
+  font-size: 12px;
+  line-height: 18px;
+}
 }

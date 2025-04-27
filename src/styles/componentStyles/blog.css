@@ -29,8 +29,10 @@
 
 
 .blog-description{
-    font-size: 14px;
     color: gray;
+}
+@media screen and (max-with:575px) {
+
 }
 
 @media screen and (max-with:575px) {

@@ -63,7 +63,7 @@ const renterForm = ({ formData, handleSumbit, handleChange, errors }) => {
         >
         </textarea>
       </div>
-      <PrimaryButton onClickFunction={handleSumbit} text={"Let's go"} className={'cta-contact-btn'} />
+      <PrimaryButton type={'button'} onClickFunction={handleSumbit} text={"Let's go"} className={'cta-contact-btn'} />
     </>
   )
 }

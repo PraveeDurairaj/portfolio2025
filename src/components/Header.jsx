@@ -53,7 +53,7 @@ const Header = () => {
                 </div>
                 <div className='button-container'>
                     <DarkModeSwitch />
-                    <PrimaryButton text={'Get in Touch'} icon className={'hidden-mobile btn-primary-icon-padding'} />
+                    <PrimaryButton type={'button'} text={'Get in Touch'} icon className={'hidden-mobile btn-primary-icon-padding'} />
                     <Image className='icon-filter' src={menuIcon} onClick={handleMenu} alt='menu icon' ></Image>
                 </div>
             </div>
@@ -69,7 +69,7 @@ const Header = () => {
                         return (<a key={index} href={data?.id} className='nav-item'>{data?.text}</a>)
                     })}
                 </div>
-                <PrimaryButton text={'Get in Touch'} icon className={'mt-10 btn-primary-icon-padding'} />
+                <PrimaryButton type={'button'} text={'Get in Touch'} icon className={'mt-10 btn-primary-icon-padding'} />
             </div>
         </>
 
