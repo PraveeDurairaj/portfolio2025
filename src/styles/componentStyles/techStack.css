@@ -4,7 +4,7 @@
     gap: 10px;
     border-radius: 10px;
     padding: 5px;
-    background: linear-gradient(to right, #665be8, #f3f4f7);
+    background: var(--liner-primary);
     overflow: hidden;
 }
 .left-panel {

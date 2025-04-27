@@ -23,7 +23,7 @@ export const useAddDos = (fbCollection) => {
 export const useGetDocs = (fbCollection) => {
 
     const [data, setData] = useState(null);
-    const getBlogData = async (id) => {
+    const getDocsData  = async (id) => {
         const docRef = doc(db, fbCollection, id);
         try {
             const docSnap = await getDoc(docRef);
@@ -34,7 +34,7 @@ export const useGetDocs = (fbCollection) => {
             console.log(err)
         }
     }
-    return { getBlogData, data }
+    return { getDocsData, data }
 }
 // update data
 export const useUpdateDocs = (fbCollection) => {
