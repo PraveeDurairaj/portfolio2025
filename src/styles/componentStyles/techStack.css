@@ -6,6 +6,7 @@
     padding: 5px;
     background: var(--liner-primary);
     overflow: hidden;
+    display:none;
 }
 .left-panel {
     padding: 20px;
@@ -28,74 +29,6 @@
     background: var(--static-black);
     color: var(--static-white);
 }
-
-/* comment card */
-.avatar-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--about-avatar-1);
-    color: var(--static-white);
-    font-size: 18px;
-}
-
-.comment-card {
-    display: flex;
-    gap: 10px;
-    padding: 15px;
-    position: relative;
-    top: 2px;
-    transform: skewy(-1deg);
-    background: var(--white-primary);
-    border-radius: 10px;
-    margin-bottom: 8px;
-}
-
-.comment-card-main-Container .comment-card:nth-child(even) {
-    z-index: 3;
-    right: -150px;
-    .comment-content {
-        max-width: 300px;
-    }
-    .avatar-container{
-        background:var(--about-avatar-2);
-    }
-}
-
-.comment-card-main-Container .comment-card:nth-child(odd) {
-    right: -100px;
-}
-
-.comment-card-Active .comment-card:nth-child(even) {
-    animation: evenRight 0.5s linear;
-    box-shadow: 20px 12px 20px 3px #bdb9b9;
-}
-
-.comment-card-Active .comment-card:nth-child(odd) {
-    animation: oddRight 0.5s linear;
-}
-
-
-@keyframes oddRight {
-    0% {right: -150px;}
-    100% {right: -100px;}
-}
-@keyframes evenRight {
-    0% {
-        right: -200px;
-        box-shadow: none;
-    }
-
-    100% {
-        right: -150px;
-        box-shadow: 20px 12px 20px 3px #bdb9b9;
-    }
-}
-/* comment card end */
 
 /* accordeion  and tab override start */
 
@@ -133,16 +66,45 @@
 }
 
 /* accordeion  and tab override start */
+
+/* web start */
+.stack-web-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+    max-width: 800px;
+    margin: auto;
+}
+.stack-web-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: var(--liner-primary);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.stack-web-container div:nth-child(even){
+    box-shadow: 1px 17px 20px 2px #8080804f;
+}
 @media screen and (max-width:991px) {
     .tech-stack-container {
         grid-template-columns: 100%;
-        padding: 2px 2px 20px;
+        padding: 2px;
+    }
+    .stack-web-container{
+      display: none;
+    }
+    .tech-stack-container{
+        display: grid;
     }
 }
 @media screen and (max-width:767px) {
-    .right-panel{
-        display: none;
-    }
     .tech-stack-container {
         padding: 2px;
     }
