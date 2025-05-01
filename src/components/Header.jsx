@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import DarkModeSwitch from './DarkModeSwitch';
-import useDarkMode from "@/hook/useDarkMode";
 import PrimaryButton from './PrimaryButton';
 import menuIcon from '../../public/menu.png';
 import closeIconLight from '../../public/closeLight.png';
@@ -41,7 +40,6 @@ const Header = () => {
         },
 
     ]
-    const [isDarkMode] = useDarkMode();
     return (
         <>
             <div className='header-container'>

@@ -1,0 +1,80 @@
+.text-banner-container {
+    min-height: 550px;
+    position: relative;
+    background: var(--liner-primary);
+    padding: 100px 15px 50px;
+}
+.text-banner-container .content-box{
+    padding: 30px 0;
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+}
+.text-banner-container .content-box h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+.text-banner-container .content-box p{
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 80%;
+    margin: auto;
+}
+.text-banner-whyChoose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0px 12px;
+}
+.showMobile{
+    display: none;
+}
+.text-banner-cta-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+@media screen and (max-width:991px) {
+    .text-banner-container .content-box,
+    .text-banner-container .content-box p{
+        max-width: 100%; 
+    }
+    .text-banner-container .content-box p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .text-banner-container .content-box h1{
+        font-size: 30px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .text-banner-container {
+        padding: 80px 15px 50px;
+    }
+    .text-banner-container .content-box h1{
+        font-size: 26px;
+    }
+    .text-banner-container .content-box{
+        text-align: start;
+    }
+    .text-banner-whyChoose{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .hiddenMobile{
+        display: none;
+    }
+    .showMobile{
+        display: flex;
+    }
+    .text-banner-cta-btn{
+        justify-content: flex-start;
+    }
+
+}

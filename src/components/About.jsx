@@ -6,7 +6,7 @@ import rtl from '../../public/rtl-language.png';
 
 const aboutData = {
     title:'Who I Am',
-    description:"Hi, I'm Praveen, a Frontend Developer with 1 year of experience. I focus on building responsive and user-friendly websites. I work with HTML, CSS, JavaScript, and popular frameworks like React, Next.js, and Gatsby",
+    description:"Hi, I'm Praveen — a Frontend Developer with 1+ years of experience in building responsive, user-friendly websites and web applications. I specialize in HTML, CSS, JavaScript, and modern frameworks like React, Next.js, and Gatsby. I collaborate closely with designers to bring UI/UX concepts to life and work alongside backend developers to ensure seamless integration and performance across the stack.",
     cardData:[
         {
             cardIcon:development,

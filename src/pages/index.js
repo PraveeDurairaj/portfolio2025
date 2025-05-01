@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useGetDocs } from "@/hook/useFirebaseCURD";
 import  Layout  from "@/layout/Layout";
+import TextOnlyBanner from "@/components/TextOnlyBanner";
 
 const Banner = dynamic(() => import("@/components/Banner"));
 const About = dynamic(() => import("@/components/About"));
@@ -25,6 +26,8 @@ export default function Home() {
     getDocsData('KgLZiVEA1X1JFFf3Bl6h')
   },[])
 
+  const textBanner = true;
+
   return (
     <>
       <Seo
@@ -36,7 +39,7 @@ export default function Home() {
         url={'dev.praveen.com'}
       />
       <Layout>
-        <Banner />
+        {textBanner ? <TextOnlyBanner/> : <Banner />}
         <About />
         <TechStack/>
         <WhyChoose />

@@ -2,6 +2,7 @@
 @import './helper.css';
 @import './componentStyles/header.css';
 @import './componentStyles/banner.css';
+@import './componentStyles/textOnlyBanner.css';
 @import './componentStyles/about.css';
 @import './componentStyles/techStack.css';
 @import './componentStyles/whyChoose.css';
