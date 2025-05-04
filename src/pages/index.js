@@ -35,7 +35,7 @@ export default function Home() {
         Description={data?.MetaDescription ?? 'Praveen is a skilled React Frontend Developer with 1 year of experience in building scalable,high-performance, and responsive web applications using React.js, JavaScript, and modern frontend technologies.'}
         keywords={data?.MetaKeywords ?? 'React Frontend Developer, React.js Developer, Praveen durairaj, Web Developer,praveen, Scalable Web Apps, Responsive UI=, Next.js, Tailwind CSS,praveen durairaj react developerś, Frontend Engineer'}
         ogDiscription={'I specialize in React.js and modern frontend technologies, crafting scalable, high-performance, and responsive web applications.'}
-        ogImage={'https://res.cloudinary.com/dpairr3zz/image/upload/v1744972235/og_hisl1t.webp'}
+        ogImage={'https://res.cloudinary.com/dpairr3zz/image/upload/v1746333534/og_1_wz5bs2.webp'}
         url={'dev.praveen.com'}
       />
       <Layout>
