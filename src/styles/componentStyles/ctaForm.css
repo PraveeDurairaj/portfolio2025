@@ -5,6 +5,7 @@
     border-radius: 30px;
     padding: 50px;
     gap: 50px 100px;
+    margin-top: 100px;
 }
 
 .cta-title {
@@ -126,11 +127,13 @@
     text-align: center;
     height: 100%;
 }
-.thanks-container img{
+
+.thanks-container img {
     object-fit: contain;
     width: 150px;
     height: 150px;
 }
+
 @media screen and (max-width:991px) {
     .cta-title {
         font-size: 36px;
@@ -140,6 +143,8 @@
 
     .cta-form-box {
         grid-template-columns: 100%;
+        margin-top: 100px;
+
     }
 
     .cta-form {

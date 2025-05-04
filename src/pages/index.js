@@ -43,7 +43,7 @@ export default function Home() {
         <About />
         <TechStack/>
         <WhyChoose />
-        <Blog />
+        {/* <Blog /> */}
       </Layout>
     </>
   );
