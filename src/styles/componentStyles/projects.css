@@ -3,3 +3,16 @@
     gap: 18px;
     overflow-x: auto;
 }
+.projects_container img {
+    width: 700px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:767px) {
+    .projects_container img {
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
