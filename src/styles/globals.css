@@ -5,10 +5,12 @@
 @import './componentStyles/textOnlyBanner.css';
 @import './componentStyles/about.css';
 @import './componentStyles/techStack.css';
+@import './componentStyles/projects.css';
 @import './componentStyles/whyChoose.css';
 @import './componentStyles/blog.css';
 @import './componentStyles//ctaForm.css';
 @import './componentStyles/footer.css';
+
 
 
 html{

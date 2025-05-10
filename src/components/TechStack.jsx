@@ -5,7 +5,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
 
 
 const techStackData = [
@@ -57,7 +56,7 @@ const TechStack = () => {
             'aria-controls': `simple-tabpanel-${index}`,
         };
     }
-   
+
     return (
         <div className='container' id='Skills'>
             <h2 className='common_h2 mb-20 text-center'>Tech Stack & Skills</h2>
@@ -68,7 +67,7 @@ const TechStack = () => {
                             techStackData?.map((data) => {
                                 return (
                                     <Tab key={data?.id} disableRipple disableFocusRipple label={
-                                        <Accordion  className={'accordionActive'} expanded={expanded === `panel${data?.id}`} onChange={handleChange(`panel${data?.id}`)}>
+                                        <Accordion className={'accordionActive'} expanded={expanded === `panel${data?.id}`} onChange={handleChange(`panel${data?.id}`)}>
                                             <AccordionSummary component={'div'}
                                                 className='accordionHeading common-sub-heading-varient-1 mb-12 font-weight-600'
                                                 aria-controls="panel1bh-content"
@@ -92,11 +91,17 @@ const TechStack = () => {
                     </Tabs>
                 </div>
             </div>
-            <div className='stack-web-container'>
-                {['Html', 'Css', 'JavaScript','React js', 'Next js', 'Gatsby','Tailwind Css', 'Bootstrap',
-                 'Material UI','Swiper.js', 'React Slick','Git', 'GitHub','Vs Code'].map((data) => {
+            <div className=''>
+                {[['Html', 'Css', 'JavaScript', 'React js', 'Next js', 'Gatsby', 'Tailwind Css', 'Bootstrap'],
+                ['Material UI', 'Swiper.js', 'React Slick', 'Git', 'GitHub', 'Vs Code']].map((data) => {
                     return (
-                        <div data-aos='zoom-in' >{data}</div>
+                        <div className='stack-web-container'>
+                                {data?.map((tech) => {
+                                    return (
+                                        <div data-aos='zoom-in' >{tech}</div>
+                                    )
+                                })}
+                        </div>
                     )
                 })}
 

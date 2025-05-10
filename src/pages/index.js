@@ -6,12 +6,13 @@ import "aos/dist/aos.css";
 import { useGetDocs } from "@/hook/useFirebaseCURD";
 import  Layout  from "@/layout/Layout";
 import TextOnlyBanner from "@/components/TextOnlyBanner";
+import Projects from "@/components/Projects";
 
 const Banner = dynamic(() => import("@/components/Banner"));
 const About = dynamic(() => import("@/components/About"));
 const TechStack = dynamic(() => import("@/components/TechStack"));
 const WhyChoose = dynamic(() => import("@/components/WhyChoose"));
-const Blog = dynamic(() => import("@/components/Blog"));
+// const Blog = dynamic(() => import("@/components/Blog"));
 
 export default function Home() {
   const { getDocsData, data } = useGetDocs('site data')
@@ -42,6 +43,7 @@ export default function Home() {
         {textBanner ? <TextOnlyBanner/> : <Banner />}
         <About />
         <TechStack/>
+        <Projects/>
         <WhyChoose />
         {/* <Blog /> */}
       </Layout>
