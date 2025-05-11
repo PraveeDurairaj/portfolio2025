@@ -11,6 +11,7 @@ const projectsData = [
   {
     id: 1,
     projectImg: gymWebsite,
+    link:'https://gym-demo-ashen.vercel.app/',
     websiteName: 'Gym website',
     websiteStack: [
       {
@@ -26,6 +27,7 @@ const projectsData = [
   {
     id: 2,
     projectImg: portfolio,
+    link:'https://portfolio2025-sandy.vercel.app/',
     websiteName: 'Portfolio website',
     websiteStack: [
       {
@@ -46,8 +48,11 @@ const projectsData = [
 const ProjectCard = ({ data }) => {
   return (
     <div className="project_item_container">
-      <Image src={data?.projectImg} alt={data?.websiteName} fill />
-      <h3 className="project_name">{data?.websiteName}</h3>
+      <Image className={'project_image'} src={data?.projectImg} alt={data?.websiteName} />
+      <div className='project_name_flex'>
+        <h3 className="project_name">{data?.websiteName}</h3>
+        <a target='_blank' href={data?.link} className='view_btn'>view</a>
+      </div>
       <div className="project_stack_container">
         {data?.websiteStack?.map((stack) => {
           return (
