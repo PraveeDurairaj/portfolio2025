@@ -70,7 +70,6 @@ const ProjectCard = ({ data }) => {
 const Projects = () => {
   return (
     <div className='container'>
-      <h2 className='common_h2 mb-20 text-center'>Projects</h2>
       <div className="projects_container">
         {projectsData?.map((card) => {
           return (

@@ -48,7 +48,7 @@
     margin-bottom: 20px !important;
     border-bottom: 3px solid #cacaca;
 }
-
+.tech-stack-container{
 .MuiPaper-root {
     box-shadow: none !important;
 }
@@ -56,12 +56,14 @@
 .MuiTabs-indicator {
     display: none !important;
 }
+}
 /* tab */
-.MuiButtonBase-root {
+
+.tech-stack-container .MuiButtonBase-root {
     max-width: unset !important;
     display: block !important;
 }
-.MuiTab-root {
+.tech-stack-container .MuiTab-root {
     padding: 0px !important;
 }
 

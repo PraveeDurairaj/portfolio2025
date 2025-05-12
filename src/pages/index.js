@@ -7,6 +7,8 @@ import { useGetDocs } from "@/hook/useFirebaseCURD";
 import  Layout  from "@/layout/Layout";
 import TextOnlyBanner from "@/components/TextOnlyBanner";
 import Projects from "@/components/Projects";
+import CustomeTab from "@/components/CustomeTab";
+import ExprinceTab from "@/components/ExprinceTab";
 
 const Banner = dynamic(() => import("@/components/Banner"));
 const About = dynamic(() => import("@/components/About"));
@@ -43,7 +45,7 @@ export default function Home() {
         {textBanner ? <TextOnlyBanner/> : <Banner />}
         <About />
         <TechStack/>
-        <Projects/>
+        <ExprinceTab/>
         <WhyChoose />
         {/* <Blog /> */}
       </Layout>

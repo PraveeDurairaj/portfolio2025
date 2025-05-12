@@ -96,9 +96,9 @@ const TechStack = () => {
                 ['Material UI', 'Swiper.js', 'React Slick', 'Git', 'GitHub', 'Vs Code']].map((data) => {
                     return (
                         <div className='stack-web-container'>
-                                {data?.map((tech) => {
+                                {data?.map((tech,key) => {
                                     return (
-                                        <div data-aos='zoom-in' >{tech}</div>
+                                        <div key={key} data-aos='zoom-in' >{tech}</div>
                                     )
                                 })}
                         </div>
