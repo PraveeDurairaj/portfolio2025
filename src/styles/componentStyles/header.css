@@ -149,18 +149,6 @@
         border: none;
         padding-bottom: 0px;
     }
-    .nav-item::before{
-        position: absolute;
-        content: "";
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background: var(--header-primary);
-        transform: translateY(-50%);
-        top: 50%;
-        left: -10px;
-        opacity: 0.8;
-    }
 }
 
 

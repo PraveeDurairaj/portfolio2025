@@ -1,0 +1,28 @@
+
+.customeTab .MuiTabs-list {
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    background: var(--black-primary);
+    border-radius: 100px;
+    padding: 0px 3px;
+  }
+  
+  .customeTab .MuiTab-textColorPrimary {
+    color: var(--white-primary);
+    z-index: 2;
+    text-transform: capitalize;
+    padding: 20px;
+  }
+  
+  .customeTab .MuiTabs-indicator {
+    height: calc(100% - 6px);
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100px;
+    background-color: var(--theme-primary);
+  }
+  
+  .customeTab .Mui-selected {
+    color: white !important;
+  }

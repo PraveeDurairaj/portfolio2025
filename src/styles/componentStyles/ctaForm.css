@@ -18,7 +18,7 @@
 
 .cta-title-spl-text {
     background-color: white;
-    color: var(--cta-primary);
+    color: var(--theme-primary);
     padding: 0px 10px;
     border-radius: 6px;
     margin: 0px 10px;
@@ -41,7 +41,7 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: var(--cta-primary);
+    background: var(--theme-primary);
     border-radius: 50%;
     flex-shrink: 0;
 }
@@ -60,7 +60,7 @@
 }
 
 .cta-icon-spl-text {
-    color: var(--cta-primary);
+    color: var(--theme-primary);
     display: inline-block;
 }
 
@@ -132,6 +132,11 @@
     object-fit: contain;
     width: 150px;
     height: 150px;
+}
+@media screen and (max-width:1199px) {
+    .cta-form-box{
+     column-gap: 30px;
+    }
 }
 
 @media screen and (max-width:991px) {

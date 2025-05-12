@@ -6,12 +6,11 @@ import "aos/dist/aos.css";
 import { useGetDocs } from "@/hook/useFirebaseCURD";
 import  Layout  from "@/layout/Layout";
 import TextOnlyBanner from "@/components/TextOnlyBanner";
-import Projects from "@/components/Projects";
-import CustomeTab from "@/components/CustomeTab";
 import ExprinceTab from "@/components/ExprinceTab";
+import CommonImageContent from "@/components/CommonImageContent";
+import aboutImg from '../../public/aboutImg.jpg';
 
 const Banner = dynamic(() => import("@/components/Banner"));
-const About = dynamic(() => import("@/components/About"));
 const TechStack = dynamic(() => import("@/components/TechStack"));
 const WhyChoose = dynamic(() => import("@/components/WhyChoose"));
 // const Blog = dynamic(() => import("@/components/Blog"));
@@ -31,6 +30,7 @@ export default function Home() {
 
   const textBanner = true;
 
+
   return (
     <>
       <Seo
@@ -43,7 +43,12 @@ export default function Home() {
       />
       <Layout>
         {textBanner ? <TextOnlyBanner/> : <Banner />}
-        <About />
+        <CommonImageContent 
+        title={'Who I Am'}
+        description={"Hi, I'm Praveen — a Frontend Developer with 1+ years of experience in building responsive, user-friendly websites and web applications. I specialize in HTML, CSS, JavaScript, and modern frameworks like React, Next.js, and Gatsby. I collaborate closely with designers to bring UI/UX concepts to life and work alongside backend developers to ensure seamless integration and performance across the stack."}
+        image={aboutImg}
+        sectionId={'About'}
+       />
         <TechStack/>
         <ExprinceTab/>
         <WhyChoose />

@@ -1,11 +1,9 @@
 :root{
-  --header-primary:#2676fd;
   --static-white:#ffffff;
   --static-black:#171717;
   --cta-linear: linear-gradient(to bottom, #182bd4, #030303);
-  --cta-primary:#0a0ad2;
+  --theme-primary:#2676fd;
   --error-foreground:#ff0000;
-  --banner-shadow:#2676fd;
   --liner-primary: linear-gradient(89.2deg, #fff -1.3%, #2676fd 281.6%);
 }
 .light {

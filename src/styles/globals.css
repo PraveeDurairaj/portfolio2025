@@ -5,6 +5,7 @@
 @import './componentStyles/textOnlyBanner.css';
 @import './componentStyles/about.css';
 @import './componentStyles/techStack.css';
+@import './componentStyles/customeTab.css';
 @import './componentStyles/projects.css';
 @import './componentStyles/whyChoose.css';
 @import './componentStyles/blog.css';
@@ -42,30 +43,4 @@ body {
 
 .devlop-bar {
   margin: 80px 0;
-}
-
-.customeTab .MuiTabs-list {
-  margin: auto;
-  width: fit-content;
-  position: relative;
-  background: black;
-  border-radius: 100px;
-  padding: 0px 3px;
-}
-
-.customeTab .MuiTab-textColorPrimary {
-  color: white;
-  z-index: 2;
-  text-transform: capitalize;
-}
-
-.customeTab .MuiTabs-indicator {
-  height: calc(100% - 6px);
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 100px;
-}
-
-.customeTab .Mui-selected {
-  color: white !important;
 }
