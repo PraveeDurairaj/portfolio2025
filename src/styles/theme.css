@@ -1,7 +1,7 @@
 :root{
   --static-white:#ffffff;
   --static-black:#171717;
-  --theme-primary:#7785e9;
+  --theme-primary:#162dd3;
   --cta-linear: linear-gradient(to bottom, var(--theme-primary), #030303);
   --error-foreground:#ff0000;
   --liner-primary: linear-gradient(89.2deg, #fff -1.3%, var(--theme-primary) 281.6%);
