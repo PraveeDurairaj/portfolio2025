@@ -115,9 +115,9 @@
   color: var(--foreground-primary);
 }
 .btn-primary {
-  padding: 10px 16px;
-  color: var(--foreground-primary);
-  background-color: var(--white-primary);
+  padding: 12px 16px;
+  color: var(--static-white);
+  background-color: var(--theme-primary);
   border-radius: 100px;
   font-size: 16px;
   font-weight: 500;

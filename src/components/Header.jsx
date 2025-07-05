@@ -31,8 +31,8 @@ const Header = () => {
             id:'/#WhyChoose'
         },
         {
-            text:'Blog',
-            id:'/#Blog'
+            text:'Expreience',
+            id:'/#Expreience'
         },
         {
             text:'Contact',

@@ -119,9 +119,9 @@ const TechStack = () => {
             </div>
             <div className=''>
                 {[['Html', 'Css', 'JavaScript', 'React js', 'Next js', 'Gatsby', 'Tailwind Css', 'Bootstrap'],
-                ['Material UI', 'Swiper.js', 'React Slick', 'Git', 'GitHub', 'Vs Code']].map((data) => {
+                ['Material UI', 'Swiper.js', 'React Slick', 'Git', 'GitHub', 'Vs Code']].map((data,key) => {
                     return (
-                        <div className='stack-web-container'>
+                        <div className='stack-web-container'key={key} >
                                 {data?.map((tech,key) => {
                                     return (
                                         <div key={key} data-aos='zoom-in' >{tech}</div>

@@ -5,7 +5,8 @@
     border-radius: 10px;
     background-color: var(--static-black);
 }
-#About .about-description{
+
+#About .about-description {
     color: var(--foreground-primary);
 }
 
@@ -38,47 +39,66 @@
     gap: 12px;
     transition: 0.3s all ease-in;
 }
-.about-flex{
+
+.about-flex {
     display: flex;
     justify-content: space-between;
     gap: 50px;
 }
-.about-flex .content-container{
+
+.about-flex .content-container {
     max-width: 600px;
+    color: var(--foreground-primary);
 }
-.about-flex .img-container{
+
+.about-year-flex {
+    border: 1px solid #80808063;
+    display: inline-flex;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 5px 12px;
+    font-size: 14px;
+    background: #2d2de924;
+}
+
+.about-flex .img-container {
     max-width: 500px;
     max-height: 300px;
     border-radius: 10px;
     flex-shrink: 0;
     overflow: hidden;
 }
-.about-flex .img-container img{
+
+.about-flex .img-container img {
     width: 500px;
     height: 300px;
     object-fit: cover;
+    background-color: #f5f5f5;
 }
 
 @media screen and (min-width:1200px) {
-  
-    .about-grid:has(.about-card:hover) .about-card:hover{
+
+    .about-grid:has(.about-card:hover) .about-card:hover {
         box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
     }
-    .about-grid:has(.about-card:hover) .about-card:not(:hover){
+
+    .about-grid:has(.about-card:hover) .about-card:not(:hover) {
         filter: blur(2px);
     }
 }
 
 @media screen and (max-width:1199px) {
-    .about-flex .img-container img{
+    .about-flex .img-container img {
         width: 400px;
     }
 }
+
 @media screen and (max-width:991px) {
     .about-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .about-flex .img-container img{
+
+    .about-flex .img-container img {
         width: 320px;
     }
 }
@@ -91,12 +111,14 @@
     .about-card {
         gap: 8px;
     }
-    .about-flex{
-        gap:25px ;
+
+    .about-flex {
+        gap: 25px;
         flex-direction: column;
         align-items: center;
     }
-    .about-flex .img-container img{
+
+    .about-flex .img-container img {
         width: 100%;
     }
 }

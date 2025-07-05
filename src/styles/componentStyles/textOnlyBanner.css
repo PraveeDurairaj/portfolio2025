@@ -1,8 +1,11 @@
 .text-banner-container {
-    min-height: 550px;
+    min-height: 650px;
     position: relative;
     background: var(--liner-primary);
     padding: 100px 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .text-banner-container .content-box{
     padding: 30px 0;
@@ -55,6 +58,7 @@
 @media screen and (max-width:767px) {
     .text-banner-container {
         padding: 80px 15px 50px;
+        min-height: 450px;
     }
     .text-banner-container .content-box h1{
         font-size: 26px;

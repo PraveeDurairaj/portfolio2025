@@ -13,7 +13,7 @@ import aboutImg from '../../public/aboutImg.jpg';
 const Banner = dynamic(() => import("@/components/Banner"));
 const TechStack = dynamic(() => import("@/components/TechStack"));
 const WhyChoose = dynamic(() => import("@/components/WhyChoose"));
-// const Blog = dynamic(() => import("@/components/Blog"));
+const Blog = dynamic(() => import("@/components/Blog"));
 
 export default function Home() {
   const { getDocsData, data } = useGetDocs('site data')
@@ -52,7 +52,7 @@ export default function Home() {
         <TechStack/>
         <ExprinceTab/>
         <WhyChoose />
-        {/* <Blog /> */}
+        <Blog />
       </Layout>
     </>
   );

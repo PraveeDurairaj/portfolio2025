@@ -5,10 +5,10 @@ import PrimaryButton from './PrimaryButton';
 
 const TextOnlyBanner = () => {
     const bannerData = {
-        header: "Building Clean, Responsive, and Scalable Web Interfaces",
-        subHeader: "As a React Frontend Developer, I focus on crafting modular components, maintaining clean codebases, and delivering user-friendly interfaces that perform across all devices.",
-        cta: 'Chat with us',
-        whyChooseData: ["Professional Expertise", "Performance & Optimization", "Mobile-First Approach"]
+        header: "Creating Fast, Reliable & Scalable Web Interface",
+        subHeader: "I'm Praveen Durairaj, a React Frontend Developer committed to building clean, reusable components and delivering fast, reliable web experiences that work flawlessly on every device.",
+        cta: "Get in Touch",
+        whyChooseData: ["Modern Frontend Expertise", "Clean, Maintainable Code", "Performance-Driven & Mobile-First"]
     }
     const renderLeadPoints = ({ className }) => {
         return (

@@ -42,6 +42,11 @@
     margin-top: 20px;
 }
 
+.why-choose-description {
+    max-width: 1000px;
+    margin: auto;
+}
+
 @media screen and (max-width:767px) {
     .why-choose-container {
         padding: 20px;
